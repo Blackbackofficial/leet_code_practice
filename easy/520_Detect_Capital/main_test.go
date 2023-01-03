@@ -39,6 +39,10 @@ func Test(t *testing.T) {
 			name:   "When we use more than one Uppercase letters and it has Lowercase",
 			cases:  "HELlo",
 			result: false,
+		}, {
+			name:   "When we use Uppercase letters and it has non letter",
+			cases:  "HHH9HH",
+			result: false,
 		},
 	}
 

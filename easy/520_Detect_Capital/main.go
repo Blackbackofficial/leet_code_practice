@@ -12,11 +12,11 @@ func main() {
 	fmt.Print("Enter text: ")
 	text, _ := reader.ReadString('\n')
 	text = text[0 : len(text)-1]
-	b := detectCapitalUse(text)
+	b := DetectCapitalUse(text)
 	fmt.Print(b)
 }
 
-func detectCapitalUse(word string) bool {
+func DetectCapitalUse(word string) bool {
 	firstLetter := false
 	checkLetter := false
 	for k, v := range word {

@@ -32,6 +32,9 @@ func DetectCapitalUse(word string) bool {
 				if k == len(word)-1 && len(word) != 2 && checkLetter == true { // CASE: CASe && outer include Hi
 					return false
 				}
+				if checkLetter == true && k > 1 {
+					return false
+				}
 				checkLetter = false
 				continue
 			} else if !firstLetter && unicode.IsLower(v) && checkLetter == false { // CASE: hello

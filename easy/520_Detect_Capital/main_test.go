@@ -35,6 +35,10 @@ func Test(t *testing.T) {
 			name:   "When we use word which its contain no letter",
 			cases:  "He5lo",
 			result: false,
+		}, {
+			name:   "When we use more than one Uppercase letters and it has Lowercase",
+			cases:  "HELlo",
+			result: false,
 		},
 	}
 

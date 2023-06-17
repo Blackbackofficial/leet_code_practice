@@ -24,7 +24,7 @@ func isPalindrome(x int) bool {
 	length := int(math.Log10(float64(x))) + 1
 	arrNum := make([]byte, length)
 
-	for k, _ := range arrNum {
+	for k := range arrNum {
 		arrNum[k] = byte(x % 10)
 		x = x / 10
 	}
